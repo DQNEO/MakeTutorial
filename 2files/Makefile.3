@@ -1,0 +1,17 @@
+# make cleanを定義する
+#
+#
+# 実行方法: make -f Makefile.2 clean
+
+hello: func.o caller.o
+	gcc -Wall -O2 -o hello func.o caller.o
+
+func.o: func.c
+	gcc -c func.c
+
+
+caller.o: caller.c
+	gcc -c caller.c
+
+clean:
+	rm *.o hello
