@@ -1,0 +1,22 @@
+# もうちょっと効率の良い書き方
+#
+# このように書けば、
+# func.cだけ編集したときにそのファイルだけコンパイルされるので
+# 効率がよい。
+#
+# 実行方法: make -f Makefile.2
+
+
+
+hello: func.o caller.o
+	gcc -Wall -O2 -o hello func.o caller.o
+
+func.o: func.c
+	gcc -c func.c
+
+
+caller.o: caller.c
+	gcc -c caller.c
+
+
+
