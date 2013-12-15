@@ -1,0 +1,25 @@
+# 複数の成果物を作る例
+#
+#
+# 実行方法: make -f Makefile.4 clean
+
+all: hello byebye
+
+byebye: byebye.o
+	gcc -Wall -O2 -o byebye byebye.o
+
+byebye.o: byebye.c
+	gcc -c byebye.c
+
+hello: func.o main.o
+	gcc -Wall -O2 -o hello func.o main.o
+
+func.o: func.c
+	gcc -c func.c
+
+
+main.o: main.c
+	gcc -c main.c
+
+clean:
+	rm *.o hello byebye
