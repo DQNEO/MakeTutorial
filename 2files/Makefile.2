@@ -8,15 +8,15 @@
 
 
 
-hello: func.o caller.o
-	gcc -Wall -O2 -o hello func.o caller.o
+hello: func.o main.o
+	gcc -Wall -O2 -o hello func.o main.o
 
 func.o: func.c
 	gcc -c func.c
 
 
-caller.o: caller.c
-	gcc -c caller.c
+main.o: main.c
+	gcc -c main.c
 
 
 
