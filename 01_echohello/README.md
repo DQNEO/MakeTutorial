@@ -4,9 +4,9 @@
 
 なにはなくとも、まずmakeしてみましょう。
 ```
-mkdir sample1
-cd sampl1
-make
+$ mkdir sample1
+$ cd sampl1
+$ make
 ```
 
 はい、エラーが出ました。
@@ -23,8 +23,8 @@ make: *** ターゲットが指定されておらず, makefile も見つかり�
 
 では空のMakefileを作ってみましょう。
 ```
-touch Makefile
-make
+$ touch Makefile
+$ make
 ```
 
 ```
@@ -48,7 +48,7 @@ hello:
 では実行してみましょう。
 
 ```
-make hello
+$ make hello
 make: `hello' に対して行うべき事はありません.
 ```
 
