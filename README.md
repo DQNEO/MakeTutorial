@@ -38,3 +38,5 @@ hello: hello.c
 ## 参考
 
 http://www.ie.u-ryukyu.ac.jp/~e085739/c.makefile.tuts.html "Makefile の書き方 (C 言語) — WTOPIA v1.0 documentation"
+http://objectclub.jp/community/memorial/homepage3.nifty.com/masarl/article/gnu-make/rule.html "- 自動化のためのGNU Make入門講座 - Makefileの基本：ルール"
+http://www.unixuser.org/~euske/doc/makefile/#terms "Make と Makefile の説明"
